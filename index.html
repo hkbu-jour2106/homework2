@@ -1,0 +1,80 @@
+<style>
+  strong {
+    color: red;
+    font-weight: 100;
+  }
+  table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+
+<h1> Solutions to Homework#2 </h1>
+
+<h2>Q1：Give the sample code snippet to resize a &#x3C;img&#x3E; element to width 600px and height 400px</h2>
+
+<p>Ans: <code>&#x3C;img src=&#x22;*&#x22; width=&#x22;600&#x22; height=&#x22;400&#x22; /&#x3E;</code></p>
+<p>Example:</p> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOFVJ0VCtqWiEu0fPbTiyEhl6qykSJgFIjY0-PQ-EHkh_a2itr"
+  width="600" height="400" />
+
+<h2>Q2. What should you do to make an &#x3C;img&#x3E; element friendly to visually impaired readers?</h2>
+
+<p>Ans: <code>&#x3C;img src=&#x22;*&#x22; alt=&#x22;We should use alt attribute&#x22; /&#x3E;</code></p>
+<p>Example:</p> <img src="*" alt="We should use alt attribute" />
+
+<h2>Q3. What is the difference between &#x3C;b&#x3E; and &#x3C;strong&#x3E; tags?</h2>
+
+<p>Ans: &#x3C;b&#x3E; is a style means "Bold", but &#x3C;strong&#x3E; is semantic, you can bind other style to strong.</p>
+<p>Example Code:</p>
+<pre><code class="html">
+&#x3C;style&#x3E;
+strong { 
+    color: red;
+    font-weight: 100;
+}
+&#x3C;/style&#x3E;
+&#x3C;strong&#x3E;Strong&#x3C;/strong&#x3E;
+&#x3C;br&#x3E;
+&#x3C;b&#x3E;bold&#x3C;/b&#x3E;
+</code></pre>
+
+<p>Example:</p>
+<p>
+  <strong>Strong</strong>
+  <br>
+  <b>bold</b>
+</p>
+
+<h2>Q4. I use &#x3C;p&#x3E; tag to present my code snippets on a website, but all the blanks including line breaks are disappeared. Which tag should I use to fix this?</h2>
+
+<p>Ans: <code>&#x3C;br&#x3E; or  &#x3C;pre&#x3E;&#x3C;/pre&#x3E;,  &#x3C;pre&#x3E;&#x3C;code&#x3E;&#x3C;/code&#x3E;&#x3C;/pre&#x3E; is one common combination.</code></p>
+
+
+<h2>Q5. Give the sample code snippet: click an &#x3C;a&#x3E; tag and open in new window</h2>
+
+<p>Ans: <code>&#x3C;a href=&#x22;https://www.google.com&#x22; target=&#x22;_blank&#x22;&#x3E;Go Google&#x3C;/a&#x3E;</code></p>
+<p>Example:</p>
+<p>
+<a href="https://www.google.com" target="_blank">Go Google</a>
+</p>
+
+<h2>Q6. Make a table of two rows by two columns. Merge the two columns on the first row.</h2>
+
+<p>Ans: <pre><code class="html">
+&#x3C;table &#x3E; 
+&#x3C;tr&#x3E; 
+&#x3C;td colspan=&#x22;2&#x22;&#x3E;aaa&#x3C;/td&#x3E; 
+&#x3C;/tr&#x3E; 
+&#x3C;tr&#x3E; 
+&#x3C;td&#x3E;bbb&#x3C;/td&#x3E; 
+&#x3C;td&#x3E;ccc&#x3C;/td&#x3E; 
+&#x3C;/tr&#x3E; 
+&#x3C;/table&#x3E;
+</code></pre></p>
+<p>Example:</p>
+<p>
+<table style="width:400" > <tr> <td colspan="2">aaa</td> </tr> <tr> <td>bbb</td> <td>ccc</td> </tr> </table>
+</p>
